@@ -12,7 +12,7 @@ from pages.main_page import Main_page
 from pages.payment_page import Payment_page
 
 
-def test_buy_product(set_up):
+def test_buy_product():
     driver = webdriver.Chrome()
 
     print("Start Test")
@@ -21,19 +21,9 @@ def test_buy_product(set_up):
     login.authorization()
 
     mp = Main_page(driver)
-    mp.select_products_1()
+    mp.select_menu_about()
 
-    cp = Cart_page(driver)
-    cp.product_confirmation()
 
-    cip = Client_information_page(driver)
-    cip.input_information()
-
-    p = Payment_page(driver)
-    p.payment()
-
-    f = Finish_page(driver)
-    f.finish()
 
     time.sleep(3)
     driver.quit()
