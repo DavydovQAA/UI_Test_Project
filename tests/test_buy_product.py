@@ -21,7 +21,7 @@ def test_buy_product(set_up):
     login.authorization()
 
     mp = Main_page(driver)
-    mp.select_products_1()gi
+    mp.select_products_1()
 
     cp = Cart_page(driver)
     cp.product_confirmation()
