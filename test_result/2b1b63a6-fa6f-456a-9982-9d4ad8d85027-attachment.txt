@@ -1,2 +1,0 @@
-Start Test 3
-Exit System
