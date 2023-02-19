@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from base.base_class import Base
 
 
-class Main_page(Base):
+class Payment_page(Base):
 
 
     def __init__(self, driver):
@@ -14,36 +14,28 @@ class Main_page(Base):
 
     # Locators
 
-    select_product_1 = '//button[@id="add-to-cart-sauce-labs-backpack"]'
-    cart = '//div[@id="shopping_cart_container"]'
+    finish_button = '//button[@id="finish"]'
 
     # Getters
 
-    def get_select_product_1(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.select_product_1)))
-
-    def get_cart(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.cart)))
-
+    def get_finish_button(self):
+        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.finish_button)))
 
 
 
     # Actions
 
-    def click_select_product_1(self):
-        self.get_select_product_1().click()
-        print('Click select product 1')
+    def click_finish_button(self):
+        self.get_finish_button().click()
+        print('Click Finish Button')
 
-    def click_cart(self):
-        self.get_cart().click()
-        print('Click Cart')
+
 
     # Methods
 
-    def select_product(self):
+    def payment(self):
         self.get_current_url()
-        self.click_select_product_1()
-        self.click_cart()
+        self.click_finish_button()
 
 
 
