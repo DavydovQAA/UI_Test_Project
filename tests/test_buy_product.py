@@ -1,4 +1,5 @@
 import time
+import allure
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -12,6 +13,7 @@ from pages.main_page import Main_page
 from pages.payment_page import Payment_page
 
 
+@allure.description('Test buy product')
 def test_buy_product(set_up):
     driver = webdriver.Chrome()
 
@@ -37,4 +39,3 @@ def test_buy_product(set_up):
 
     time.sleep(3)
     driver.quit()
-

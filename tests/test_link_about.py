@@ -1,4 +1,6 @@
 import time
+
+import allure
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -12,7 +14,8 @@ from pages.main_page import Main_page
 from pages.payment_page import Payment_page
 
 
-def test_buy_product():
+@allure.description('Test link about')
+def test_link_about():
     driver = webdriver.Chrome()
 
     print("Start Test")
@@ -23,8 +26,5 @@ def test_buy_product():
     mp = Main_page(driver)
     mp.select_menu_about()
 
-
-
     time.sleep(3)
     driver.quit()
-

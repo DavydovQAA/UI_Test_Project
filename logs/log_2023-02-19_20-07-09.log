@@ -1,0 +1,95 @@
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-02-19 20:07:11.398945
+Start name method: authorization
+
+End time: 2023-02-19 20:07:12.650517
+End name method: authorization
+URL: https://www.saucedemo.com/inventory.html
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-02-19 20:07:12.650812
+Start name method: select_products_1
+
+
+-----
+Test: tests/test_buy_product_2.py::test_buy_product_1 (call)
+Start time: 2023-02-19 20:07:23.636753
+Start name method: authorization
+
+End time: 2023-02-19 20:07:24.891717
+End name method: authorization
+URL: https://www.saucedemo.com/inventory.html
+
+-----
+
+-----
+Test: tests/test_buy_product_2.py::test_buy_product_1 (call)
+Start time: 2023-02-19 20:07:24.891960
+Start name method: select_products_1
+
+
+-----
+Test: tests/test_buy_product_2.py::test_buy_product_2 (call)
+Start time: 2023-02-19 20:07:27.637946
+Start name method: authorization
+
+End time: 2023-02-19 20:07:28.957891
+End name method: authorization
+URL: https://www.saucedemo.com/inventory.html
+
+-----
+
+-----
+Test: tests/test_buy_product_2.py::test_buy_product_2 (call)
+Start time: 2023-02-19 20:07:28.958085
+Start name method: select_products_2
+
+End time: 2023-02-19 20:07:29.012632
+End name method: select_products_2
+URL: https://www.saucedemo.com/cart.html
+
+-----
+
+-----
+Test: tests/test_buy_product_2.py::test_buy_product_2 (call)
+Start time: 2023-02-19 20:07:29.012833
+Start name method: product_confirmation
+
+End time: 2023-02-19 20:07:29.042658
+End name method: product_confirmation
+URL: https://www.saucedemo.com/checkout-step-one.html
+
+-----
+
+-----
+Test: tests/test_buy_product_2.py::test_buy_product_3 (call)
+Start time: 2023-02-19 20:07:33.332779
+Start name method: authorization
+
+
+-----
+Test: tests/test_link_about.py::test_link_about (call)
+Start time: 2023-02-19 20:07:35.656538
+Start name method: authorization
+
+End time: 2023-02-19 20:07:37.003659
+End name method: authorization
+URL: https://www.saucedemo.com/inventory.html
+
+-----
+
+-----
+Test: tests/test_link_about.py::test_link_about (call)
+Start time: 2023-02-19 20:07:37.003927
+Start name method: select_menu_about
+
+End time: 2023-02-19 20:07:37.969890
+End name method: select_menu_about
+URL: https://saucelabs.com/
+
+-----

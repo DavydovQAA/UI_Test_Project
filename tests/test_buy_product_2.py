@@ -1,5 +1,6 @@
 import time
 
+import allure
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -15,6 +16,7 @@ from pages.payment_page import Payment_page
 
 
 # @pytest.mark.order(1)
+@allure.description('Test buy product 1')
 def test_buy_product_1(set_group):
     driver = webdriver.Chrome()
 
@@ -36,6 +38,7 @@ def test_buy_product_1(set_group):
 
 
 # @pytest.mark.order(1)
+@allure.description('Test buy product 2')
 def test_buy_product_2():
     driver = webdriver.Chrome()
 
@@ -57,6 +60,7 @@ def test_buy_product_2():
 
 
 # @pytest.mark.order(2)
+@allure.description('Test buy product 3')
 def test_buy_product_3():
     driver = webdriver.Chrome()
 
