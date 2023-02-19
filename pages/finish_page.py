@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from base.base_class import Base
 
 
-class Payment_page(Base):
+class Finish_page(Base):
 
 
     def __init__(self, driver):
@@ -14,28 +14,24 @@ class Payment_page(Base):
 
     # Locators
 
-    finish_button = '//button[@id="finish"]'
 
     # Getters
 
-    def get_finish_button(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.finish_button)))
 
 
 
     # Actions
 
-    def click_finish_button(self):
-        self.get_finish_button().click()
-        print('Click Finish Button')
+
 
 
 
     # Methods
 
-    def payment(self):
+    def finish(self):
         self.get_current_url()
-        self.click_finish_button()
+        self.assert_url('https://www.saucedemo.com/checkout-complete.html')
+        self.get_screenshot()
 
 
 
